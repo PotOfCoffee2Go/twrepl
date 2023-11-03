@@ -1,0 +1,19 @@
+created: 20231102213314713
+modified: 20231102213940428
+tags: [[REPL Commands]]
+title: .exit
+type: text/vnd.tiddlywiki
+
+```
+.exit     Exit the REPL
+```
+This is the same as pressing `ctrl-c` twice. \
+
+You will notice that it actual takes three `ctrl-c` to exit or an `.exit` and a `ctrl-c`. The reason for this is because the sync server is still running 'underneath' the REPL and it can't exit until you `ctrl-c` one last time to shutdown the sync server.
+
+The server tells you this when it starts:
+
+```cmd
+$tw repl> Serving on http://127.0.0.1:8080
+(press ctrl-C to exit)
+```

@@ -1,0 +1,15 @@
+created: 20231102231441914
+modified: 20231103035417745
+tags: [[REPL Commands]]
+title: .load
+type: text/vnd.tiddlywiki
+
+```
+.load     Load JS from a file into the REPL session
+```
+Load reads a text file line at a time and submits to the REPL as if it was typed. twrepl has a directory 'load' to hold files to be loaded. 
+
+It is not unusual to do a .clear command prior to loading the file(s).
+
+`.load load/file.txt`
+ 

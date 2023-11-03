@@ -1,0 +1,11 @@
+created: 20231102214532908
+modified: 20231102214629801
+tags: [[REPL Commands]]
+title: .help
+type: text/vnd.tiddlywiki
+
+```
+.help     Print this help message
+```
+
+See [[REPL Commands]]

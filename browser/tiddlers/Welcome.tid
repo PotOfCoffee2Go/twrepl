@@ -1,0 +1,50 @@
+created: 20231102103835604
+list: [[REPL Commands]]
+modified: 20231103025526919
+tags: TableOfContents
+title: Welcome
+type: text/vnd.tiddlywiki
+
+This TiddlyWiki is launched from directory 'twrepl'. It is the TiddlyWiki 'server' edition as distributed by TiddlyWiki. But there is a difference - instead of installing `npm install tiddlywiki` (the normal package that brings up the server), this was started from the Node.js REPL.
+
+REPL is a acronym for 'Read-Evaluate-Print-Loop'. It is a command line processor. Give it a text command, interprets it, spits back text as a reply and do it over and over. The Node.js REPL is based on JavaScript.
+
+But this one has full access to TiddlyWiki functions '$tw'! As a side benefit since it does have all TiddlyWiki toys (like the $tw.Commander) it runs the the equivalent of 'tiddlywik --listen' 
+
+!! Install
+
+From command window:
+
+```
+git clone https://github.com/PotOfCoffee2Go/twrepl.git
+cd twrepl
+npm install
+npm start
+```
+
+This will display:
+
+```
+> twrepl@0.1.0 start
+> node twrepl.js
+
+TiddlyWiki REPL - Release: 5.3.1
+TiddlyWiki code can be accessed via variable '$tw'
+
+
+'cmdr.syncServer.listen()' starts the TiddlyWiki for this REPL
+  so will do that for you automatically.
+  Can go to 'http://localhost:8080' for further '$tw REPL' usage info
+
+
+$tw repl> cmdr.syncServer.listen()
+
+$tw repl> Serving on http://127.0.0.1:8080
+(press ctrl-C to exit)
+
+$tw repl> 
+```
+
+The system will automatically bring up the TiddlyWiki ''sync'' server edition and wait for commands.
+
+

@@ -1,0 +1,58 @@
+created: 20231102103835604
+modified: 20231102161213233
+tags: help contents TableOfContents
+title: Welcome
+type: text/vnd.tiddlywiki
+
+This TiddlyWiki is launched from directory 'twrepl'. It is the TiddlyWiki 'server' edition as distributed by TiddlyWiki. But there is a difference - instead of installing `npm install tiddlywiki` (the normal package that brings up the server), this was started from the Node.js REPL.
+
+<details class="poc2go-details">
+<summary class="poc2go-summary">What is a REPL? ...</summary>
+<div class="poc2go-details-container">
+  <div class="poc2go-details-content">
+
+REPL is a acronym for ... something - forgot - google it. Whatever it means doesn't help figure out what it is.
+
+For our use is a command line processor. Give it a text command, interprets it, spits back text as a reply. You see one whenever docs state 'open a command window' or 'from the command window'. REPL is one of those.
+
+How do we know this, how do we know its command line processor? Because it is text and has a 'prompt'. All command line processors have a prompt - it might be just a '>' (real common), might have directory name, date/time, can even be told to be hidden - but it is still there.
+
+So don't matter if called REPL, shell, bash, zsh, vim, or 'power' is the name - to the world; are the lowest of low - 'text only' command line processor. If seen one, seen them all.
+
+BUT - for developers they are AWESOME! Nothing would get done without 'em. There are huge argements which one is the best, the worst. node.js REPL is another to add to the list.
+
+  </div>
+</div>
+</details>
+
+From command window:
+
+```cmd
+git clone https://github.com/PotOfCoffee2Go/twrepl.git
+cd twrepl
+npm install
+npm start
+```
+This will display:
+
+```cmd
+> twrepl@0.1.0 start
+> node twrepl.js
+
+TiddlyWiki REPL - Release: 5.3.1
+TiddlyWiki code can be accessed via variable '$tw'
+
+
+'cmdr.syncServer.listen()' starts the TiddlyWiki for this REPL
+  after can go to 'http://localhost:8080' for further usage info
+
+
+$tw repl> cmdr.syncServer.listen()
+
+$tw repl> Serving on http://127.0.0.1:8080
+(press ctrl-C to exit)
+
+$tw repl> 
+```
+
+The system will automatically bring up the sync server and leave you at a command prompt.

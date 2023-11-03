@@ -1,0 +1,47 @@
+created: 20231102182614266
+modified: 20231102200011130
+tags: [[REPL Commands]]
+title: .break
+type: text/vnd.tiddlywiki
+
+```
+.break    Sometimes you get stuck, this gets you out
+```
+
+`.break` is pretty much what it says. Every now and again will be entering stuff and the REPL is looking for the proper ending character:
+
+```cmd
+$tw repl> function hi() {
+... return 'hello world'
+... 
+... .break
+$tw repl> 
+```
+Notice the three dots. That means it needs more stuff or is waiting for you to type the proper ending character (in this case `}`). Normally, will eventually do a `.break` on it's own if just type garbage:
+
+```cmd
+$tw repl> function hi() {
+... return 'hello world'
+... WTF? i'm all done
+WTF? i'm all done
+      ^^^^^^^^^^^
+
+Uncaught SyntaxError: Invalid or unexpected token
+$tw repl>
+```
+
+Well, let's actually do this function - copy/paste and press enter
+
+```cmd
+function hi() {
+  return 'Hello World!';
+}
+
+```
+
+> On my system to copy and paste in a command window it is `ctrl-shift-c` to copy, and `ctrl-shift-v` to paste - your mileage may vary.
+
+
+
+```
+ 

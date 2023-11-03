@@ -1,0 +1,15 @@
+created: 20231102211434516
+modified: 20231103031015488
+tags: [[REPL Commands]]
+title: .clear
+type: text/vnd.tiddlywiki
+
+```
+.clear    break, and also clear the local context
+```
+
+Like we are born with the knowledge of what 'local context' is.
+
+What is does is resets everything as if you shut it down and started it back up again. All variables, functions, the good, bad, and ugly stuff will all be cleared. 
+
+That being said, the sync server will remain running and the TiddlyWiki web page is unaffected. It is not part of the 'local context', it is 'global context'.

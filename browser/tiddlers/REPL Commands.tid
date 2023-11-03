@@ -1,0 +1,28 @@
+created: 20231102194149617
+list: .break .clear .editor .exit .help .load .save
+modified: 20231102231631719
+tags: Welcome
+title: REPL Commands
+type: text/vnd.tiddlywiki
+
+```
+.help     Print this help message
+```
+This documentation gives some of the nuances that can happen when using these commands for '$tw REPL'. For a good general, and very complete discussion:
+
+> [[digitalocean|https://www.digitalocean.com/community/tutorials/how-to-use-the-node-js-repl]] has an in-depth write up on REPL commands.
+
+The REPL has a set of commands that can be helpful. They all begin with a period '.' - with a helpful one `.help`.
+
+```cmd
+$tw repl> .help
+.break    Sometimes you get stuck, this gets you out
+.clear    Break, and also clear the local context
+.editor   Enter editor mode
+.exit     Exit the REPL
+.help     Print this help message
+.load     Load JS from a file into the REPL session
+.save     Save all evaluated commands in this REPL session to a file
+
+Press Ctrl+C to abort current expression, Ctrl+D to exit the REPL
+```

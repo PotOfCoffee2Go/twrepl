@@ -1,0 +1,15 @@
+created: 20231102212554334
+modified: 20231103021159602
+tags: [[REPL Commands]]
+title: .editor
+type: text/vnd.tiddlywiki
+
+```
+.editor   Enter editor mode
+```
+
+Editor mode hides the prompt which allows a little cleaner entry especially when it comes to functions. But it's not going to beat your favorite editor.
+
+Which is what 'editor mode' actually means - is designed for you to edit the content in your favorite editor, put the REPL in editor mode - copy and paste. See Tips & Tricks -> [[Use external editor]].
+
+> If it wasn't for editor mode I probably would not use REPL.

@@ -1,0 +1,9 @@
+created: 20231102231531888
+modified: 20231103035854173
+tags: [[REPL Commands]]
+title: .save
+type: text/vnd.tiddlywiki
+
+```
+.save     Save all evaluated commands in this REPL session to a file
+```
